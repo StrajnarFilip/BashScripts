@@ -17,6 +17,9 @@ sudo apt-get update; \
 dotnet new mvc  
 dotnet add package LettuceEncrypt --version 1.0.1
 
+Add service:
+`services.AddLettuceEncrypt();`
+
 Add to appsettings.json:
 
 ```{
@@ -30,8 +33,8 @@ Add to appsettings.json:
   "AllowedHosts": "*",
   "LettuceEncrypt": {
     "AcceptTermsOfService": true,
-    "DomainNames": [ "example.com", "www.example.com" ],
-    "EmailAddress": "it-admin@example.com"
+    "DomainNames": [ "example.com", "www.example.com" ], // Change domain
+    "EmailAddress": "it-admin@example.com" // change to valid email
   }
 }
 ```

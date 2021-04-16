@@ -1,0 +1,2 @@
+# BashScripts
+Self notes
